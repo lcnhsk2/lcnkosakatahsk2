@@ -1,118 +1,2085 @@
-<!DOCTYPE html>
-<!-- Created with iSpring --><!-- 1256 684 --><!--version 11.7.0.5 --><!--type html --><!--mainFolder ./ -->
-<html style=background-color:#dcdee0;>
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/><meta name="format-detection" content="telephone=no"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="msapplication-tap-highlight" content="no"/><title>KOSAKATA HSK2</title><link rel="apple-touch-icon-precomposed" href="data/apple-touch-icon.png"/><link rel="shortcut icon" type="image/ico" href="data/favicon.ico"/><style>body {background-color:#dcdee0;}#spr0_1c065b6f {display:none;}</style>
-    
-    
-    <style>
-		#playerView {
-			position:absolute;
-			-webkit-tap-highlight-color:rgba(0,0,0,0);
-			-webkit-user-select:none;
-			-moz-user-select:none;
-			-webkit-touch-callout:none;
-			-webkit-user-drag:none;
-		}
-		#playerView * {
-			position:absolute;
-		}
-		#preloader {
-			width: 50px;
-			height: 50px;
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			margin: auto;
-			border-radius: 10px;
-			background-color: rgba(0, 0, 0, 0.5);
-		}
-
-		#preloader::after {
-			content: '';
-			position: absolute;
-			background: url(data:image/png;base64,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UmVhZHlxyWU8AAADcmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMwNjcgNzkuMTU3NzQ3LCAyMDE1LzAzLzMwLTIzOjQwOjQyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmFjOGVjNDFhLTZkYWItODQ0Ni04YzkzLWU1Mjk3N2YwMmE4NSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFRThCNzU3NDYzNjcxMUU1QTZDRUE5NTVGOUJGQ0E3MCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFRThCNzU3MzYzNjcxMUU1QTZDRUE5NTVGOUJGQ0E3MCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0OWFlZmI1OC00ZWFmLWQ3NDgtYTI0ZS0zNmNhNGQ2M2QwNTYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6N0MwQkFBM0M2MjAxMTFFNUI4QjBERTk4MjY5MjQwQjUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6MGSVVAAAE3klEQVR42uycW4hWVRiG15Q4eYzGQySSQlriEQ9BF2mE4iSdESRRIb0RD+mNmHgICjqQEGUe6sqgCy1i0iRinAzELrooQhHLGQURUTzMiM7omCLj+/F/czX/t/890z6s9e/3hZcZ1l6z19r7mXXca62arq4uR/mjh/gKCIQiEAKhCIRAKAIhEIpACIQiEIpACIQiEAKhCIRAKAIhEMoX9Yu62NbWxjcUobq6OpaQQpcQz/QwPBOeDU+Fx8Oj4UfhoRrnJnwDvgC3wCfgY/Bf8P0QHrImahmQB1VWLfwGvAieqy+/LxJIR+Dv4QPwf75WWb4CGQavg9fo70mqFd4F79DfCSRCA+HN8Hp4cMppdcBfwB/Bt9mo99Sr8Cl4SwYwnKYhaf2jaXMconoE/hL+CR6TQ/pPato7NS+FbtSfgH+Gp8eMfwv+HT6qpakZvqzVT/d//ePw0/BEeI72ygbFvP/f8MvwpSK2IfLSGuGxFeJ1aby98CG4s5fpDNAqaTlcL89cIf45jddcpDZknI4PKsFo0NKzQLusnX1Iq1P/doHe60CF+GM1b+OK0obIYO5XeGREnLPwfHghfDzBtOVeb+q9z0bEG6njltHVDqQ2RuP9HTwDbkoxH02axv4YjX1tNQP5LKIBl7ZiK/yWToGkLUljsaZpNaTTNc9VCeR1eHUEjHfgD3OoQiXNVRFQVmveqwrIEHh3xPXNOp2Rl77WPFiSvA+tJiCb4FHGNanHP/FggCp52Gdck7y/Wy0Dw2Hatx9s9KZmZNRmxC3JMjh8qsy1Du0St4Y+DomaKFzlEQxRu+apnOQZ1oVeZfWPeMCGlLu2/6dL3BDRwPcPGYiMjocbvaoPnL963+h1DddnChbIMiP8cMIj8KQln34be/lM3gOREW69cW2v81/fGOH1aY7e0wTyrNGYyxT6wQCAHNS8lmvcZ4UIZL4RLt8z7gQA5I7mtZyeCxHIS0b4UReOrLw+EyIQqxScDAiIldcJIQLZYTTmvwUEpMUIHxMikB/gta40PXIF/lwHVrcCAnLVCH8srQR9X7mYt2RUbq1yrOFia390N9SReugaYoR3EEg+GmGEtxNIPhpvhJ8nkHw02Qj/l0Dy0Rwj/DSBZC9ZeD3buPYHgWSv11z5RdrSw/qTQLLX20Z4o0toSxyBxJdsKrVmq79NM2ECKa/3XPltC9fgXwgkW81zpVX35fSVS3HahEB6SqZK9hjXujeJOgLJTrLG19qos1OrLALJSLL+eLFx7SL8cRaZIJCSVrrSfnVL8qHtJoFkoy3ablibQeWz849ZZaZfgUHIfg/Z97EkIs5xLR2OQNLv2u5x0Ttt5UShV1wfj91glRVP01xp8UVTBRiyuOFFheJYQpKVzNrKwQErXPyDA2SF+5k8MhsykCnwPdfzaA3ZYy6nREyCX4Cfd/EPs+nV0RoEUlqWsx1eCie9Bkc2nW5wOa87Dg3Ipy75bWXntSd1yIcHDK1RT3KzTIcOBif6AqOo3d42HX/I0tZW3zIXWgnp68chmfaQjZxyoKac0bXNRxghlpCN2m1dpj/btXEfpD0uqYaua89Luq3dx8TKN3AeE1vt4mLrAohACIQiEAKhCIRAKAIhEIpACq7IqROKJYRA+AoIhCIQAqEIhEAoAiEQikCKrQcCDABHPgH2w7NQdAAAAABJRU5ErkJggg==);
-			background-size: cover;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			animation: preloader_spin 1s infinite linear;
-			-webkit-animation: preloader_spin 1s infinite linear;
-		}
-
-		@keyframes preloader_spin { 0% {transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
-		@-webkit-keyframes preloader_spin { 0% {-webkit-transform: rotate(0deg);} 100% {-webkit-transform: rotate(360deg);}}
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan HSK 2 Kosakata</title>
+  <script src="/_sdk/data_sdk.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+            font-family: SimSun, serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100%;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        
+        .designer {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .player-form {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .player-input {
+            font-size: 24px;
+            padding: 15px;
+            border: 3px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            font-family: SimSun, serif;
+            width: 300px;
+        }
+        
+        .chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .chapter-btn {
+            background: linear-gradient(45deg, #4facfe, #00f2fe);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: SimSun, serif;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .chapter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .mode-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .mode-btn {
+            background: linear-gradient(45deg, #a8edea, #fed6e3);
+            color: #333;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-family: SimSun, serif;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .mode-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .question-container {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .timer-container {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .timer-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: conic-gradient(#28a745 0deg, #28a745 0deg, #e9ecef 0deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            transition: all 0.1s ease;
+        }
+        
+        .timer-circle.warning {
+            background: conic-gradient(#ffc107 0deg, #ffc107 0deg, #e9ecef 0deg);
+            color: #856404;
+        }
+        
+        .timer-circle.danger {
+            background: conic-gradient(#dc3545 0deg, #dc3545 0deg, #e9ecef 0deg);
+            color: #721c24;
+            animation: pulse 0.5s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+        
+        .question {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .option-btn {
+            background: white;
+            border: 3px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 32px;
+            font-family: SimSun, serif;
+            cursor: pointer;
+            transition: all 0.3s;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .option-btn:hover {
+            border-color: #007bff;
+            background: #f0f8ff;
+        }
+        
+        .option-btn.correct {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+        
+        .option-btn.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+        
+        .example-sentences {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .example-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #1976d2;
+        }
+        
+        .sentence {
+            margin: 10px 0;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        
+        .hanzi {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        
+        .pinyin {
+            color: #388e3c;
+            font-style: italic;
+        }
+        
+        .indonesian {
+            color: #1976d2;
+        }
+        
+        .score-display {
+            background: linear-gradient(45deg, #ffecd2, #fcb69f);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        
+        .btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: SimSun, serif;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
     </style>
-</head>
-<body>
-	<div id="preloader"></div>
-	<script src="data/browsersupport.js?692B7D5E"></script>
-	<script src="data/player.js?692B7D5E"></script>
-    <div id="content"></div>
-    <div id="spr0_1c065b6f"></div>
-    <script>
-		document.addEventListener("DOMContentLoaded", () => (function(startup){
-			function start(savedPresentationState)
-			{
-				var presInfo = "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";
-				PresentationPlayer.start(presInfo, "content", "playerView", onPlayerInit, savedPresentationState);
-				function onPlayerInit(player)
-				{
-					(function(player){
-	(function(player)
-{
-	function findConnector(win)
-	{
-		var retries = 0;
-		while (!win.ispringPresentationConnector && win.parent && win.parent != win)
-		{
-			++retries;
-			if (retries > 7)
-			{
-				return null;
-			}
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <div class="title" id="gameTitle">
+     Latihan HSK 2 Kosakata
+    </div>
+    <div class="designer" id="designerInfo">
+     Design by LCN Palembang (08994477998)
+    </div>
+   </div>
+   <div class="content"><!-- Player Registration -->
+    <div id="playerForm" class="player-form">
+     <h2>Masukkan Nama Anda</h2><input type="text" id="playerName" class="player-input" placeholder="Nama Pemain" maxlength="30"> <br><button class="btn" onclick="startGame()">Mulai Game</button>
+    </div><!-- Chapter Selection -->
+    <div id="chapterSelection" class="hidden">
+     <h2 style="text-align: center; font-size: 28px;">Pilih Bab</h2>
+     <div class="chapter-grid" id="chapterGrid"></div>
+     <div style="text-align: center; margin-top: 20px;"><button class="btn" onclick="backToPlayerForm()">← Kembali</button>
+     </div>
+    </div><!-- Mode Selection -->
+    <div id="modeSelection" class="hidden">
+     <h2 style="text-align: center; font-size: 28px;">Pilih Mode Latihan</h2>
+     <div class="mode-buttons"><button class="mode-btn" onclick="selectMode('indonesia-hanzi')">Indonesia → Hanzi</button> <button class="mode-btn" onclick="selectMode('hanzi-indonesia')">Hanzi → Indonesia</button> <button class="mode-btn" onclick="selectMode('melengkapi')">Melengkapi Kosakata</button>
+     </div>
+     <div style="text-align: center; margin-top: 20px;"><button class="btn" onclick="backToChapterSelection()">← Kembali</button>
+     </div>
+    </div><!-- Game Area -->
+    <div id="gameArea" class="hidden">
+     <div class="score-display"><span id="playerDisplay"></span> | <span id="chapterDisplay"></span> | <span id="modeDisplay"></span> | Skor: <span id="scoreDisplay">0</span>/<span id="totalDisplay">0</span>
+     </div>
+     <div class="question-container">
+      <div class="timer-container">
+       <div class="timer-circle" id="timerCircle">
+        10
+       </div>
+      </div>
+      <div class="question" id="questionText"></div>
+      <div class="options-grid" id="optionsGrid"></div>
+     </div>
+     <div id="exampleSentences" class="example-sentences hidden">
+      <div class="example-title">
+       Contoh Kalimat:
+      </div>
+      <div id="sentenceContent"></div>
+     </div>
+     <div style="text-align: center;"><button class="btn" onclick="backToModeSelection()">← Kembali</button> <button class="btn" onclick="backToMenu()">Menu Utama</button>
+     </div>
+    </div><!-- Results -->
+    <div id="results" class="hidden">
+     <div class="score-display">
+      <h2>Hasil Latihan</h2>
+      <div id="finalScore"></div>
+     </div>
+     <div style="text-align: center;"><button class="btn" onclick="backToChapterSelection()">Pilih Bab Lain</button> <button class="btn" onclick="backToMenu()">Menu Utama</button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+        // Vocabulary data with sentences
+        const vocabularyData = {
+            "BAB 01": {
+                "一起": {
+                    indonesian: "bersama-sama",
+                    sentences: [
+                        { hanzi: "我们一起去看电影。", pinyin: "Wǒmen yīqǐ qù kàn diànyǐng.", indonesian: "Kami pergi menonton film bersama-sama." },
+                        { hanzi: "他们一起学习中文。", pinyin: "Tāmen yīqǐ xuéxí zhōngwén.", indonesian: "Mereka belajar bahasa Mandarin bersama-sama." }
+                    ]
+                },
+                "为什么": {
+                    indonesian: "mengapa",
+                    sentences: [
+                        { hanzi: "你为什么不来？", pinyin: "Nǐ wèishénme bù lái?", indonesian: "Mengapa kamu tidak datang?" },
+                        { hanzi: "为什么今天这么热？", pinyin: "Wèishénme jīntiān zhème rè?", indonesian: "Mengapa hari ini sangat panas?" }
+                    ]
+                },
+                "也": {
+                    indonesian: "juga",
+                    sentences: [
+                        { hanzi: "我也喜欢音乐。", pinyin: "Wǒ yě xǐhuān yīnyuè.", indonesian: "Saya juga suka musik." },
+                        { hanzi: "她也是学生。", pinyin: "Tā yě shì xuéshēng.", indonesian: "Dia juga seorang siswa." }
+                    ]
+                },
+                "它": {
+                    indonesian: "dia/itu (benda)",
+                    sentences: [
+                        { hanzi: "这是我的猫，它很可爱。", pinyin: "Zhè shì wǒ de māo, tā hěn kě'ài.", indonesian: "Ini kucing saya, dia sangat lucu." },
+                        { hanzi: "那本书很有趣，它是我的。", pinyin: "Nà běn shū hěn yǒuqù, tā shì wǒ de.", indonesian: "Buku itu sangat menarik, itu milik saya." }
+                    ]
+                },
+                "新": {
+                    indonesian: "baru",
+                    sentences: [
+                        { hanzi: "这是我的新手机。", pinyin: "Zhè shì wǒ de xīn shǒujī.", indonesian: "Ini adalah ponsel baru saya." },
+                        { hanzi: "新年快乐！", pinyin: "Xīnnián kuàilè!", indonesian: "Selamat Tahun Baru!" }
+                    ]
+                },
+                "旅游": {
+                    indonesian: "berwisata",
+                    sentences: [
+                        { hanzi: "我喜欢旅游。", pinyin: "Wǒ xǐhuān lǚyóu.", indonesian: "Saya suka berwisata." },
+                        { hanzi: "他们去中国旅游。", pinyin: "Tāmen qù Zhōngguó lǚyóu.", indonesian: "Mereka pergi berwisata ke China." }
+                    ]
+                },
+                "最": {
+                    indonesian: "paling",
+                    sentences: [
+                        { hanzi: "这是最好的餐厅。", pinyin: "Zhè shì zuì hǎo de cāntīng.", indonesian: "Ini adalah restoran yang paling baik." },
+                        { hanzi: "我最喜欢红色。", pinyin: "Wǒ zuì xǐhuān hóngsè.", indonesian: "Saya paling suka warna merah." }
+                    ]
+                },
+                "眼睛": {
+                    indonesian: "mata",
+                    sentences: [
+                        { hanzi: "她的眼睛很漂亮。", pinyin: "Tā de yǎnjīng hěn piàoliang.", indonesian: "Matanya sangat cantik." },
+                        { hanzi: "我的眼睛有点儿累。", pinyin: "Wǒ de yǎnjīng yǒudiǎnr lèi.", indonesian: "Mata saya agak lelah." }
+                    ]
+                },
+                "要": {
+                    indonesian: "ingin/akan",
+                    sentences: [
+                        { hanzi: "我要喝水。", pinyin: "Wǒ yào hē shuǐ.", indonesian: "Saya ingin minum air." },
+                        { hanzi: "明天要下雨。", pinyin: "Míngtiān yào xiàyǔ.", indonesian: "Besok akan turun hujan." }
+                    ]
+                },
+                "觉得": {
+                    indonesian: "merasa",
+                    sentences: [
+                        { hanzi: "我觉得很累。", pinyin: "Wǒ juéde hěn lèi.", indonesian: "Saya merasa sangat lelah." },
+                        { hanzi: "你觉得怎么样？", pinyin: "Nǐ juéde zěnmeyàng?", indonesian: "Bagaimana perasaanmu?" }
+                    ]
+                },
+                "踢足球": {
+                    indonesian: "bermain sepak bola",
+                    sentences: [
+                        { hanzi: "他喜欢踢足球。", pinyin: "Tā xǐhuān tī zúqiú.", indonesian: "Dia suka bermain sepak bola." },
+                        { hanzi: "我们去踢足球吧。", pinyin: "Wǒmen qù tī zúqiú ba.", indonesian: "Mari kita pergi bermain sepak bola." }
+                    ]
+                },
+                "运动": {
+                    indonesian: "olahraga",
+                    sentences: [
+                        { hanzi: "运动对身体好。", pinyin: "Yùndòng duì shēntǐ hǎo.", indonesian: "Olahraga baik untuk tubuh." },
+                        { hanzi: "我每天都运动。", pinyin: "Wǒ měitiān dōu yùndòng.", indonesian: "Saya berolahraga setiap hari." }
+                    ]
+                }
+            },
+            "BAB 02": {
+                "高": {
+                    indonesian: "tinggi",
+                    sentences: [
+                        { hanzi: "那座山很高。", pinyin: "Nà zuò shān hěn gāo.", indonesian: "Gunung itu sangat tinggi." },
+                        { hanzi: "他比我高。", pinyin: "Tā bǐ wǒ gāo.", indonesian: "Dia lebih tinggi dari saya." }
+                    ]
+                },
+                "身体": {
+                    indonesian: "tubuh",
+                    sentences: [
+                        { hanzi: "我的身体很健康。", pinyin: "Wǒ de shēntǐ hěn jiànkāng.", indonesian: "Tubuh saya sangat sehat." },
+                        { hanzi: "运动对身体好。", pinyin: "Yùndòng duì shēntǐ hǎo.", indonesian: "Olahraga baik untuk tubuh." }
+                    ]
+                },
+                "跑步": {
+                    indonesian: "berlari",
+                    sentences: [
+                        { hanzi: "我每天早上跑步。", pinyin: "Wǒ měitiān zǎoshang pǎobù.", indonesian: "Saya berlari setiap pagi." },
+                        { hanzi: "跑步很累但是很健康。", pinyin: "Pǎobù hěn lèi dànshì hěn jiànkāng.", indonesian: "Berlari sangat melelahkan tapi sehat." }
+                    ]
+                },
+                "起床": {
+                    indonesian: "bangun tidur",
+                    sentences: [
+                        { hanzi: "我每天六点起床。", pinyin: "Wǒ měitiān liù diǎn qǐchuáng.", indonesian: "Saya bangun tidur setiap hari jam enam." },
+                        { hanzi: "起床了！", pinyin: "Qǐchuáng le!", indonesian: "Bangun tidur!" }
+                    ]
+                },
+                "药": {
+                    indonesian: "obat",
+                    sentences: [
+                        { hanzi: "我需要吃药。", pinyin: "Wǒ xūyào chī yào.", indonesian: "Saya perlu minum obat." },
+                        { hanzi: "这个药很苦。", pinyin: "Zhège yào hěn kǔ.", indonesian: "Obat ini sangat pahit." }
+                    ]
+                },
+                "米": {
+                    indonesian: "meter/beras",
+                    sentences: [
+                        { hanzi: "这个房间有十米长。", pinyin: "Zhège fángjiān yǒu shí mǐ cháng.", indonesian: "Ruangan ini panjangnya sepuluh meter." },
+                        { hanzi: "我们吃米饭。", pinyin: "Wǒmen chī mǐfàn.", indonesian: "Kami makan nasi." }
+                    ]
+                },
+                "知道": {
+                    indonesian: "tahu",
+                    sentences: [
+                        { hanzi: "我知道他的名字。", pinyin: "Wǒ zhīdào tā de míngzì.", indonesian: "Saya tahu namanya." },
+                        { hanzi: "你知道吗？", pinyin: "Nǐ zhīdào ma?", indonesian: "Apakah kamu tahu?" }
+                    ]
+                },
+                "生病": {
+                    indonesian: "sakit",
+                    sentences: [
+                        { hanzi: "我生病了。", pinyin: "Wǒ shēngbìng le.", indonesian: "Saya sakit." },
+                        { hanzi: "他生病不能来上课。", pinyin: "Tā shēngbìng bù néng lái shàngkè.", indonesian: "Dia sakit tidak bisa datang ke kelas." }
+                    ]
+                },
+                "每": {
+                    indonesian: "setiap",
+                    sentences: [
+                        { hanzi: "我每天学习中文。", pinyin: "Wǒ měitiān xuéxí zhōngwén.", indonesian: "Saya belajar bahasa Mandarin setiap hari." },
+                        { hanzi: "每个人都很忙。", pinyin: "Měi gè rén dōu hěn máng.", indonesian: "Setiap orang sangat sibuk." }
+                    ]
+                },
+                "时间": {
+                    indonesian: "waktu",
+                    sentences: [
+                        { hanzi: "现在几点时间？", pinyin: "Xiànzài jǐ diǎn shíjiān?", indonesian: "Sekarang jam berapa?" },
+                        { hanzi: "我没有时间。", pinyin: "Wǒ méiyǒu shíjiān.", indonesian: "Saya tidak punya waktu." }
+                    ]
+                },
+                "早上": {
+                    indonesian: "pagi",
+                    sentences: [
+                        { hanzi: "早上好！", pinyin: "Zǎoshang hǎo!", indonesian: "Selamat pagi!" },
+                        { hanzi: "我早上七点吃早饭。", pinyin: "Wǒ zǎoshang qī diǎn chī zǎofàn.", indonesian: "Saya sarapan jam tujuh pagi." }
+                    ]
+                },
+                "忙": {
+                    indonesian: "sibuk",
+                    sentences: [
+                        { hanzi: "我今天很忙。", pinyin: "Wǒ jīntiān hěn máng.", indonesian: "Saya sangat sibuk hari ini." },
+                        { hanzi: "你忙吗？", pinyin: "Nǐ máng ma?", indonesian: "Apakah kamu sibuk?" }
+                    ]
+                },
+                "出院": {
+                    indonesian: "keluar dari rumah sakit",
+                    sentences: [
+                        { hanzi: "他明天出院。", pinyin: "Tā míngtiān chūyuàn.", indonesian: "Dia keluar dari rumah sakit besok." },
+                        { hanzi: "出院以后要好好休息。", pinyin: "Chūyuàn yǐhòu yào hǎohǎo xiūxí.", indonesian: "Setelah keluar dari rumah sakit harus istirahat dengan baik." }
+                    ]
+                },
+                "出": {
+                    indonesian: "keluar",
+                    sentences: [
+                        { hanzi: "请出去。", pinyin: "Qǐng chūqù.", indonesian: "Silakan keluar." },
+                        { hanzi: "太阳出来了。", pinyin: "Tàiyáng chūlái le.", indonesian: "Matahari terbit." }
+                    ]
+                },
+                "休息": {
+                    indonesian: "istirahat",
+                    sentences: [
+                        { hanzi: "我需要休息一下。", pinyin: "Wǒ xūyào xiūxí yīxià.", indonesian: "Saya perlu istirahat sebentar." },
+                        { hanzi: "今天是休息日。", pinyin: "Jīntiān shì xiūxírì.", indonesian: "Hari ini adalah hari libur." }
+                    ]
+                }
+            },
+            "BAB 03": {
+                "一下": {
+                    indonesian: "sebentar",
+                    sentences: [
+                        { hanzi: "请等一下。", pinyin: "Qǐng děng yīxià.", indonesian: "Tolong tunggu sebentar." },
+                        { hanzi: "我看一下。", pinyin: "Wǒ kàn yīxià.", indonesian: "Saya lihat sebentar." }
+                    ]
+                },
+                "丈夫": {
+                    indonesian: "suami",
+                    sentences: [
+                        { hanzi: "这是我的丈夫。", pinyin: "Zhè shì wǒ de zhàngfū.", indonesian: "Ini adalah suami saya." },
+                        { hanzi: "她的丈夫很帅。", pinyin: "Tā de zhàngfū hěn shuài.", indonesian: "Suaminya sangat tampan." }
+                    ]
+                },
+                "千": {
+                    indonesian: "ribu",
+                    sentences: [
+                        { hanzi: "一千块钱。", pinyin: "Yī qiān kuài qián.", indonesian: "Seribu yuan." },
+                        { hanzi: "这本书有一千页。", pinyin: "Zhè běn shū yǒu yī qiān yè.", indonesian: "Buku ini ada seribu halaman." }
+                    ]
+                },
+                "左边": {
+                    indonesian: "sebelah kiri",
+                    sentences: [
+                        { hanzi: "银行在左边。", pinyin: "Yínháng zài zuǒbiān.", indonesian: "Bank ada di sebelah kiri." },
+                        { hanzi: "请往左边走。", pinyin: "Qǐng wǎng zuǒbiān zǒu.", indonesian: "Silakan jalan ke kiri." }
+                    ]
+                },
+                "房间": {
+                    indonesian: "kamar",
+                    sentences: [
+                        { hanzi: "这个房间很大。", pinyin: "Zhège fángjiān hěn dà.", indonesian: "Kamar ini sangat besar." },
+                        { hanzi: "我的房间在二楼。", pinyin: "Wǒ de fángjiān zài èr lóu.", indonesian: "Kamar saya di lantai dua." }
+                    ]
+                },
+                "手表": {
+                    indonesian: "jam tangan",
+                    sentences: [
+                        { hanzi: "这是我的新手表。", pinyin: "Zhè shì wǒ de xīn shǒubiǎo.", indonesian: "Ini jam tangan baru saya." },
+                        { hanzi: "你的手表很漂亮。", pinyin: "Nǐ de shǒubiǎo hěn piàoliang.", indonesian: "Jam tanganmu sangat cantik." }
+                    ]
+                },
+                "报纸": {
+                    indonesian: "koran",
+                    sentences: [
+                        { hanzi: "我每天看报纸。", pinyin: "Wǒ měitiān kàn bàozhǐ.", indonesian: "Saya membaca koran setiap hari." },
+                        { hanzi: "这是今天的报纸。", pinyin: "Zhè shì jīntiān de bàozhǐ.", indonesian: "Ini koran hari ini." }
+                    ]
+                },
+                "旁边": {
+                    indonesian: "sebelah",
+                    sentences: [
+                        { hanzi: "学校在医院旁边。", pinyin: "Xuéxiào zài yīyuàn pángbiān.", indonesian: "Sekolah ada di sebelah rumah sakit." },
+                        { hanzi: "请坐在我旁边。", pinyin: "Qǐng zuò zài wǒ pángbiān.", indonesian: "Silakan duduk di sebelah saya." }
+                    ]
+                },
+                "牛奶": {
+                    indonesian: "susu",
+                    sentences: [
+                        { hanzi: "我喜欢喝牛奶。", pinyin: "Wǒ xǐhuān hē niúnǎi.", indonesian: "Saya suka minum susu." },
+                        { hanzi: "这杯牛奶很新鲜。", pinyin: "Zhè bēi niúnǎi hěn xīnxiān.", indonesian: "Segelas susu ini sangat segar." }
+                    ]
+                },
+                "真": {
+                    indonesian: "benar-benar",
+                    sentences: [
+                        { hanzi: "这真好吃！", pinyin: "Zhè zhēn hǎochī!", indonesian: "Ini benar-benar enak!" },
+                        { hanzi: "你真聪明。", pinyin: "Nǐ zhēn cōngmíng.", indonesian: "Kamu benar-benar pintar." }
+                    ]
+                },
+                "粉色": {
+                    indonesian: "warna pink",
+                    sentences: [
+                        { hanzi: "她喜欢粉色的衣服。", pinyin: "Tā xǐhuān fěnsè de yīfú.", indonesian: "Dia suka pakaian berwarna pink." },
+                        { hanzi: "这朵花是粉色的。", pinyin: "Zhè duǒ huā shì fěnsè de.", indonesian: "Bunga ini berwarna pink." }
+                    ]
+                },
+                "红色": {
+                    indonesian: "warna merah",
+                    sentences: [
+                        { hanzi: "中国的国旗是红色的。", pinyin: "Zhōngguó de guóqí shì hóngsè de.", indonesian: "Bendera China berwarna merah." },
+                        { hanzi: "我买了一件红色的毛衣。", pinyin: "Wǒ mǎi le yī jiàn hóngsè de máoyī.", indonesian: "Saya membeli sweater berwarna merah." }
+                    ]
+                },
+                "送": {
+                    indonesian: "mengirim/memberikan",
+                    sentences: [
+                        { hanzi: "我送你一本书。", pinyin: "Wǒ sòng nǐ yī běn shū.", indonesian: "Saya memberikan kamu sebuah buku." },
+                        { hanzi: "请送我到机场。", pinyin: "Qǐng sòng wǒ dào jīchǎng.", indonesian: "Tolong antar saya ke bandara." }
+                    ]
+                },
+                "颜色": {
+                    indonesian: "warna",
+                    sentences: [
+                        { hanzi: "你喜欢什么颜色？", pinyin: "Nǐ xǐhuān shénme yánsè?", indonesian: "Kamu suka warna apa?" },
+                        { hanzi: "这个颜色很漂亮。", pinyin: "Zhège yánsè hěn piàoliang.", indonesian: "Warna ini sangat cantik." }
+                    ]
+                }
+            },
+            "BAB 04": {
+                "非常": {
+                    indonesian: "sangat",
+                    sentences: [
+                        { hanzi: "今天非常热。", pinyin: "Jīntiān fēicháng rè.", indonesian: "Hari ini sangat panas." },
+                        { hanzi: "我非常喜欢这本书。", pinyin: "Wǒ fēicháng xǐhuān zhè běn shū.", indonesian: "Saya sangat suka buku ini." }
+                    ]
+                },
+                "问": {
+                    indonesian: "bertanya",
+                    sentences: [
+                        { hanzi: "我想问你一个问题。", pinyin: "Wǒ xiǎng wèn nǐ yī gè wèntí.", indonesian: "Saya ingin bertanya satu pertanyaan kepadamu." },
+                        { hanzi: "老师问学生问题。", pinyin: "Lǎoshī wèn xuéshēng wèntí.", indonesian: "Guru bertanya kepada siswa." }
+                    ]
+                },
+                "长": {
+                    indonesian: "panjang",
+                    sentences: [
+                        { hanzi: "这条路很长。", pinyin: "Zhè tiáo lù hěn cháng.", indonesian: "Jalan ini sangat panjang." },
+                        { hanzi: "她的头发很长。", pinyin: "Tā de tóufǎ hěn cháng.", indonesian: "Rambutnya sangat panjang." }
+                    ]
+                },
+                "给": {
+                    indonesian: "memberi",
+                    sentences: [
+                        { hanzi: "请给我一杯水。", pinyin: "Qǐng gěi wǒ yī bēi shuǐ.", indonesian: "Tolong beri saya segelas air." },
+                        { hanzi: "我给你买了礼物。", pinyin: "Wǒ gěi nǐ mǎi le lǐwù.", indonesian: "Saya membelikan kamu hadiah." }
+                    ]
+                },
+                "生日": {
+                    indonesian: "ulang tahun",
+                    sentences: [
+                        { hanzi: "今天是我的生日。", pinyin: "Jīntiān shì wǒ de shēngrì.", indonesian: "Hari ini ulang tahun saya." },
+                        { hanzi: "生日快乐！", pinyin: "Shēngrì kuàilè!", indonesian: "Selamat ulang tahun!" }
+                    ]
+                },
+                "晚上": {
+                    indonesian: "malam",
+                    sentences: [
+                        { hanzi: "晚上好！", pinyin: "Wǎnshang hǎo!", indonesian: "Selamat malam!" },
+                        { hanzi: "我晚上看电视。", pinyin: "Wǒ wǎnshang kàn diànshì.", indonesian: "Saya menonton TV di malam hari." }
+                    ]
+                },
+                "接": {
+                    indonesian: "menjemput",
+                    sentences: [
+                        { hanzi: "我去机场接你。", pinyin: "Wǒ qù jīchǎng jiē nǐ.", indonesian: "Saya pergi ke bandara menjemputmu." },
+                        { hanzi: "请接电话。", pinyin: "Qǐng jiē diànhuà.", indonesian: "Tolong angkat telepon." }
+                    ]
+                },
+                "快乐": {
+                    indonesian: "bahagia",
+                    sentences: [
+                        { hanzi: "我很快乐。", pinyin: "Wǒ hěn kuàilè.", indonesian: "Saya sangat bahagia." },
+                        { hanzi: "祝你快乐！", pinyin: "Zhù nǐ kuàilè!", indonesian: "Semoga kamu bahagia!" }
+                    ]
+                },
+                "开始": {
+                    indonesian: "mulai",
+                    sentences: [
+                        { hanzi: "我们开始上课吧。", pinyin: "Wǒmen kāishǐ shàngkè ba.", indonesian: "Mari kita mulai kelas." },
+                        { hanzi: "电影八点开始。", pinyin: "Diànyǐng bā diǎn kāishǐ.", indonesian: "Film mulai jam delapan." }
+                    ]
+                },
+                "帮": {
+                    indonesian: "membantu",
+                    sentences: [
+                        { hanzi: "请帮我一下。", pinyin: "Qǐng bāng wǒ yīxià.", indonesian: "Tolong bantu saya sebentar." },
+                        { hanzi: "我帮你做作业。", pinyin: "Wǒ bāng nǐ zuò zuòyè.", indonesian: "Saya membantu kamu mengerjakan PR." }
+                    ]
+                },
+                "已经": {
+                    indonesian: "sudah",
+                    sentences: [
+                        { hanzi: "我已经吃饭了。", pinyin: "Wǒ yǐjīng chīfàn le.", indonesian: "Saya sudah makan." },
+                        { hanzi: "他已经回家了。", pinyin: "Tā yǐjīng huíjiā le.", indonesian: "Dia sudah pulang ke rumah." }
+                    ]
+                },
+                "介绍": {
+                    indonesian: "memperkenalkan",
+                    sentences: [
+                        { hanzi: "请介绍一下自己。", pinyin: "Qǐng jièshào yīxià zìjǐ.", indonesian: "Tolong perkenalkan diri Anda." },
+                        { hanzi: "我介绍你们认识。", pinyin: "Wǒ jièshào nǐmen rènshí.", indonesian: "Saya memperkenalkan kalian untuk saling kenal." }
+                    ]
+                },
+                "两": {
+                    indonesian: "dua",
+                    sentences: [
+                        { hanzi: "我有两个苹果。", pinyin: "Wǒ yǒu liǎng gè píngguǒ.", indonesian: "Saya punya dua buah apel." },
+                        { hanzi: "两点钟见面。", pinyin: "Liǎng diǎn zhōng jiànmiàn.", indonesian: "Bertemu jam dua." }
+                    ]
+                }
+            },
+            "BAB 05": {
+                "不错": {
+                    indonesian: "tidak buruk/bagus",
+                    sentences: [
+                        { hanzi: "这个餐厅不错。", pinyin: "Zhège cāntīng bùcuò.", indonesian: "Restoran ini bagus." },
+                        { hanzi: "你的中文不错。", pinyin: "Nǐ de zhōngwén bùcuò.", indonesian: "Bahasa Mandarin kamu bagus." }
+                    ]
+                },
+                "以后": {
+                    indonesian: "setelah/nanti",
+                    sentences: [
+                        { hanzi: "以后我们再见面。", pinyin: "Yǐhòu wǒmen zài jiànmiàn.", indonesian: "Nanti kita bertemu lagi." },
+                        { hanzi: "毕业以后我要工作。", pinyin: "Bìyè yǐhòu wǒ yào gōngzuò.", indonesian: "Setelah lulus saya ingin bekerja." }
+                    ]
+                },
+                "件": {
+                    indonesian: "buah (classifier)",
+                    sentences: [
+                        { hanzi: "我买了三件衣服。", pinyin: "Wǒ mǎi le sān jiàn yīfú.", indonesian: "Saya membeli tiga buah pakaian." },
+                        { hanzi: "这件事很重要。", pinyin: "Zhè jiàn shì hěn zhòngyào.", indonesian: "Hal ini sangat penting." }
+                    ]
+                },
+                "准备": {
+                    indonesian: "mempersiapkan",
+                    sentences: [
+                        { hanzi: "我在准备考试。", pinyin: "Wǒ zài zhǔnbèi kǎoshì.", indonesian: "Saya sedang mempersiapkan ujian." },
+                        { hanzi: "请准备好你的护照。", pinyin: "Qǐng zhǔnbèi hǎo nǐ de hùzhào.", indonesian: "Tolong siapkan paspor Anda." }
+                    ]
+                },
+                "可以": {
+                    indonesian: "boleh/bisa",
+                    sentences: [
+                        { hanzi: "我可以帮你。", pinyin: "Wǒ kěyǐ bāng nǐ.", indonesian: "Saya bisa membantu kamu." },
+                        { hanzi: "可以进来吗？", pinyin: "Kěyǐ jìnlái ma?", indonesian: "Boleh masuk?" }
+                    ]
+                },
+                "吧": {
+                    indonesian: "partikel saran",
+                    sentences: [
+                        { hanzi: "我们走吧。", pinyin: "Wǒmen zǒu ba.", indonesian: "Mari kita pergi." },
+                        { hanzi: "你休息一下吧。", pinyin: "Nǐ xiūxí yīxià ba.", indonesian: "Kamu istirahat sebentar ya." }
+                    ]
+                },
+                "咖啡": {
+                    indonesian: "kopi",
+                    sentences: [
+                        { hanzi: "我喜欢喝咖啡。", pinyin: "Wǒ xǐhuān hē kāfēi.", indonesian: "Saya suka minum kopi." },
+                        { hanzi: "这杯咖啡很香。", pinyin: "Zhè bēi kāfēi hěn xiāng.", indonesian: "Secangkir kopi ini sangat harum." }
+                    ]
+                },
+                "外边": {
+                    indonesian: "luar",
+                    sentences: [
+                        { hanzi: "外边很冷。", pinyin: "Wàibiān hěn lěng.", indonesian: "Di luar sangat dingin." },
+                        { hanzi: "我们到外边去玩。", pinyin: "Wǒmen dào wàibiān qù wán.", indonesian: "Kita pergi bermain ke luar." }
+                    ]
+                },
+                "对": {
+                    indonesian: "benar",
+                    sentences: [
+                        { hanzi: "你说得对。", pinyin: "Nǐ shuō de duì.", indonesian: "Yang kamu katakan benar." },
+                        { hanzi: "这个答案对吗？", pinyin: "Zhège dá'àn duì ma?", indonesian: "Apakah jawaban ini benar?" }
+                    ]
+                },
+                "就": {
+                    indonesian: "hanya/langsung",
+                    sentences: [
+                        { hanzi: "我就要一杯茶。", pinyin: "Wǒ jiù yào yī bēi chá.", indonesian: "Saya hanya ingin secangkir teh." },
+                        { hanzi: "银行就在前面。", pinyin: "Yínháng jiù zài qiánmiàn.", indonesian: "Bank ada tepat di depan." }
+                    ]
+                },
+                "意思": {
+                    indonesian: "arti",
+                    sentences: [
+                        { hanzi: "这个词什么意思？", pinyin: "Zhège cí shénme yìsi?", indonesian: "Apa arti kata ini?" },
+                        { hanzi: "我不明白你的意思。", pinyin: "Wǒ bù míngbái nǐ de yìsi.", indonesian: "Saya tidak mengerti maksud kamu." }
+                    ]
+                },
+                "考试": {
+                    indonesian: "ujian",
+                    sentences: [
+                        { hanzi: "明天有中文考试。", pinyin: "Míngtiān yǒu zhōngwén kǎoshì.", indonesian: "Besok ada ujian bahasa Mandarin." },
+                        { hanzi: "考试很难。", pinyin: "Kǎoshì hěn nán.", indonesian: "Ujian sangat sulit." }
+                    ]
+                },
+                "还": {
+                    indonesian: "masih/lagi",
+                    sentences: [
+                        { hanzi: "我还没吃饭。", pinyin: "Wǒ hái méi chīfàn.", indonesian: "Saya masih belum makan." },
+                        { hanzi: "还有问题吗？", pinyin: "Hái yǒu wèntí ma?", indonesian: "Masih ada pertanyaan?" }
+                    ]
+                },
+                "鱼": {
+                    indonesian: "ikan",
+                    sentences: [
+                        { hanzi: "我喜欢吃鱼。", pinyin: "Wǒ xǐhuān chī yú.", indonesian: "Saya suka makan ikan." },
+                        { hanzi: "这条鱼很新鲜。", pinyin: "Zhè tiáo yú hěn xīnxiān.", indonesian: "Ikan ini sangat segar." }
+                    ]
+                }
+            },
+            "BAB 06": {
+                "面条": {
+                    indonesian: "mie",
+                    sentences: [
+                        { hanzi: "我想吃面条。", pinyin: "Wǒ xiǎng chī miàntiáo.", indonesian: "Saya ingin makan mie." },
+                        { hanzi: "这碗面条很好吃。", pinyin: "Zhè wǎn miàntiáo hěn hǎochī.", indonesian: "Semangkuk mie ini sangat enak." }
+                    ]
+                },
+                "门": {
+                    indonesian: "pintu",
+                    sentences: [
+                        { hanzi: "请关门。", pinyin: "Qǐng guān mén.", indonesian: "Tolong tutup pintu." },
+                        { hanzi: "门开着。", pinyin: "Mén kāi zhe.", indonesian: "Pintu terbuka." }
+                    ]
+                },
+                "自行车": {
+                    indonesian: "sepeda",
+                    sentences: [
+                        { hanzi: "我骑自行车上学。", pinyin: "Wǒ qí zìxíngchē shàngxué.", indonesian: "Saya naik sepeda ke sekolah." },
+                        { hanzi: "这辆自行车是我的。", pinyin: "Zhè liàng zìxíngchē shì wǒ de.", indonesian: "Sepeda ini milik saya." }
+                    ]
+                },
+                "羊肉": {
+                    indonesian: "daging kambing",
+                    sentences: [
+                        { hanzi: "我不吃羊肉。", pinyin: "Wǒ bù chī yángròu.", indonesian: "Saya tidak makan daging kambing." },
+                        { hanzi: "这个羊肉很嫩。", pinyin: "Zhège yángròu hěn nèn.", indonesian: "Daging kambing ini sangat empuk." }
+                    ]
+                },
+                "经常": {
+                    indonesian: "sering",
+                    sentences: [
+                        { hanzi: "我经常看电影。", pinyin: "Wǒ jīngcháng kàn diànyǐng.", indonesian: "Saya sering menonton film." },
+                        { hanzi: "他经常迟到。", pinyin: "Tā jīngcháng chídào.", indonesian: "Dia sering terlambat." }
+                    ]
+                },
+                "游泳": {
+                    indonesian: "berenang",
+                    sentences: [
+                        { hanzi: "我喜欢游泳。", pinyin: "Wǒ xǐhuān yóuyǒng.", indonesian: "Saya suka berenang." },
+                        { hanzi: "夏天我们去游泳。", pinyin: "Xiàtiān wǒmen qù yóuyǒng.", indonesian: "Musim panas kami pergi berenang." }
+                    ]
+                },
+                "打篮球": {
+                    indonesian: "bermain basket",
+                    sentences: [
+                        { hanzi: "他会打篮球。", pinyin: "Tā huì dǎ lánqiú.", indonesian: "Dia bisa bermain basket." },
+                        { hanzi: "我们一起打篮球吧。", pinyin: "Wǒmen yīqǐ dǎ lánqiú ba.", indonesian: "Mari kita bermain basket bersama." }
+                    ]
+                },
+                "所以": {
+                    indonesian: "jadi/karena itu",
+                    sentences: [
+                        { hanzi: "下雨了，所以我不出去。", pinyin: "Xiàyǔ le, suǒyǐ wǒ bù chūqù.", indonesian: "Hujan, jadi saya tidak keluar." },
+                        { hanzi: "我很累，所以要休息。", pinyin: "Wǒ hěn lèi, suǒyǐ yào xiūxí.", indonesian: "Saya sangat lelah, karena itu harus istirahat." }
+                    ]
+                },
+                "姐姐": {
+                    indonesian: "kakak perempuan",
+                    sentences: [
+                        { hanzi: "我姐姐是医生。", pinyin: "Wǒ jiějiě shì yīshēng.", indonesian: "Kakak perempuan saya adalah dokter." },
+                        { hanzi: "姐姐比我大三岁。", pinyin: "Jiějiě bǐ wǒ dà sān suì.", indonesian: "Kakak perempuan lebih tua tiga tahun dari saya." }
+                    ]
+                },
+                "好吃": {
+                    indonesian: "enak",
+                    sentences: [
+                        { hanzi: "这个菜很好吃。", pinyin: "Zhège cài hěn hǎochī.", indonesian: "Masakan ini sangat enak." },
+                        { hanzi: "妈妈做的饭最好吃。", pinyin: "Māmā zuò de fàn zuì hǎochī.", indonesian: "Masakan ibu paling enak." }
+                    ]
+                },
+                "外": {
+                    indonesian: "luar",
+                    sentences: [
+                        { hanzi: "我在外面等你。", pinyin: "Wǒ zài wàimiàn děng nǐ.", indonesian: "Saya menunggu kamu di luar." },
+                        { hanzi: "外国人很多。", pinyin: "Wàiguórén hěn duō.", indonesian: "Orang asing sangat banyak." }
+                    ]
+                },
+                "因为": {
+                    indonesian: "karena",
+                    sentences: [
+                        { hanzi: "因为下雨，我没去。", pinyin: "Yīnwèi xiàyǔ, wǒ méi qù.", indonesian: "Karena hujan, saya tidak pergi." },
+                        { hanzi: "因为生病，他没来上课。", pinyin: "Yīnwèi shēngbìng, tā méi lái shàngkè.", indonesian: "Karena sakit, dia tidak datang ke kelas." }
+                    ]
+                },
+                "公斤": {
+                    indonesian: "kilogram",
+                    sentences: [
+                        { hanzi: "我买了两公斤苹果。", pinyin: "Wǒ mǎi le liǎng gōngjīn píngguǒ.", indonesian: "Saya membeli dua kilogram apel." },
+                        { hanzi: "这个西瓜有三公斤。", pinyin: "Zhège xīguā yǒu sān gōngjīn.", indonesian: "Semangka ini beratnya tiga kilogram." }
+                    ]
+                }
+            },
+            "BAB 07": {
+                "公共汽车": {
+                    indonesian: "bus",
+                    sentences: [
+                        { hanzi: "我坐公共汽车上班。", pinyin: "Wǒ zuò gōnggòng qìchē shàngbān.", indonesian: "Saya naik bus ke kantor." },
+                        { hanzi: "公共汽车很拥挤。", pinyin: "Gōnggòng qìchē hěn yōngjǐ.", indonesian: "Bus sangat ramai." }
+                    ]
+                },
+                "公司": {
+                    indonesian: "perusahaan",
+                    sentences: [
+                        { hanzi: "我在一家大公司工作。", pinyin: "Wǒ zài yī jiā dà gōngsī gōngzuò.", indonesian: "Saya bekerja di sebuah perusahaan besar." },
+                        { hanzi: "这个公司很有名。", pinyin: "Zhège gōngsī hěn yǒumíng.", indonesian: "Perusahaan ini sangat terkenal." }
+                    ]
+                },
+                "到": {
+                    indonesian: "sampai",
+                    sentences: [
+                        { hanzi: "我八点到学校。", pinyin: "Wǒ bā diǎn dào xuéxiào.", indonesian: "Saya sampai sekolah jam delapan." },
+                        { hanzi: "从这里到那里要十分钟。", pinyin: "Cóng zhèlǐ dào nàlǐ yào shí fēnzhōng.", indonesian: "Dari sini ke sana butuh sepuluh menit." }
+                    ]
+                },
+                "小时": {
+                    indonesian: "jam",
+                    sentences: [
+                        { hanzi: "我学了两个小时中文。", pinyin: "Wǒ xué le liǎng gè xiǎoshí zhōngwén.", indonesian: "Saya belajar bahasa Mandarin selama dua jam." },
+                        { hanzi: "电影有三个小时。", pinyin: "Diànyǐng yǒu sān gè xiǎoshí.", indonesian: "Film berdurasi tiga jam." }
+                    ]
+                },
+                "快": {
+                    indonesian: "cepat",
+                    sentences: [
+                        { hanzi: "你走得太快了。", pinyin: "Nǐ zǒu de tài kuài le.", indonesian: "Kamu berjalan terlalu cepat." },
+                        { hanzi: "时间过得很快。", pinyin: "Shíjiān guò de hěn kuài.", indonesian: "Waktu berlalu sangat cepat." }
+                    ]
+                },
+                "慢": {
+                    indonesian: "lambat",
+                    sentences: [
+                        { hanzi: "请说慢一点。", pinyin: "Qǐng shuō màn yīdiǎn.", indonesian: "Tolong bicara lebih lambat." },
+                        { hanzi: "这辆车很慢。", pinyin: "Zhè liàng chē hěn màn.", indonesian: "Mobil ini sangat lambat." }
+                    ]
+                },
+                "教室": {
+                    indonesian: "ruang kelas",
+                    sentences: [
+                        { hanzi: "学生们在教室里上课。", pinyin: "Xuéshēngmen zài jiàoshì lǐ shàngkè.", indonesian: "Para siswa sedang belajar di ruang kelas." },
+                        { hanzi: "这个教室很大。", pinyin: "Zhège jiàoshì hěn dà.", indonesian: "Ruang kelas ini sangat besar." }
+                    ]
+                },
+                "机场": {
+                    indonesian: "bandara",
+                    sentences: [
+                        { hanzi: "我去机场接朋友。", pinyin: "Wǒ qù jīchǎng jiē péngyǒu.", indonesian: "Saya pergi ke bandara menjemput teman." },
+                        { hanzi: "机场离这里很远。", pinyin: "Jīchǎng lí zhèlǐ hěn yuǎn.", indonesian: "Bandara jauh dari sini." }
+                    ]
+                },
+                "离": {
+                    indonesian: "jauh dari",
+                    sentences: [
+                        { hanzi: "学校离我家很近。", pinyin: "Xuéxiào lí wǒ jiā hěn jìn.", indonesian: "Sekolah dekat dari rumah saya." },
+                        { hanzi: "银行离这里有多远？", pinyin: "Yínháng lí zhèlǐ yǒu duō yuǎn?", indonesian: "Seberapa jauh bank dari sini?" }
+                    ]
+                },
+                "走": {
+                    indonesian: "berjalan",
+                    sentences: [
+                        { hanzi: "我们走路去公园。", pinyin: "Wǒmen zǒulù qù gōngyuán.", indonesian: "Kami berjalan kaki ke taman." },
+                        { hanzi: "请慢慢走。", pinyin: "Qǐng mànmàn zǒu.", indonesian: "Tolong berjalan pelan-pelan." }
+                    ]
+                },
+                "路": {
+                    indonesian: "jalan",
+                    sentences: [
+                        { hanzi: "这条路很宽。", pinyin: "Zhè tiáo lù hěn kuān.", indonesian: "Jalan ini sangat lebar." },
+                        { hanzi: "我不认识路。", pinyin: "wǒ bù rènshi lù.", indonesian: "Saya tidak kenal jalan." }
+                    ]
+                },
+                "过": {
+                    indonesian: "melewati",
+                    sentences: [
+                        { hanzi: "过马路要小心。", pinyin: "Guò mǎlù yào xiǎoxīn.", indonesian: "Menyeberang jalan harus hati-hati." },
+                        { hanzi: "我过了桥就到了。", pinyin: "Wǒ guò le qiáo jiù dào le.", indonesian: "Setelah melewati jembatan saya sampai." }
+                    ]
+                },
+                "远": {
+                    indonesian: "jauh",
+                    sentences: [
+                        { hanzi: "我家离学校很远。", pinyin: "Wǒ jiā lí xuéxiào hěn yuǎn.", indonesian: "Rumah saya jauh dari sekolah." },
+                        { hanzi: "那个地方太远了。", pinyin: "Nàge dìfāng tài yuǎn le.", indonesian: "Tempat itu terlalu jauh." }
+                    ]
+                }
+            },
+            "BAB 08": {
+                "黑": {
+                    indonesian: "hitam",
+                    sentences: [
+                        { hanzi: "我喜欢黑色的衣服。", pinyin: "Wǒ xǐhuān hēisè de yīfú.", indonesian: "Saya suka pakaian berwarna hitam." },
+                        { hanzi: "晚上天很黑。", pinyin: "Wǎnshang tiān hěn hēi.", indonesian: "Malam hari langit sangat gelap." }
+                    ]
+                },
+                "贵": {
+                    indonesian: "mahal",
+                    sentences: [
+                        { hanzi: "这件衣服太贵了。", pinyin: "Zhè jiàn yīfú tài guì le.", indonesian: "Pakaian ini terlalu mahal." },
+                        { hanzi: "贵的东西不一定好。", pinyin: "Guì de dōngxī bù yīdìng hǎo.", indonesian: "Barang mahal belum tentu bagus." }
+                    ]
+                },
+                "让": {
+                    indonesian: "membiarkan",
+                    sentences: [
+                        { hanzi: "请让我帮你。", pinyin: "Qǐng ràng wǒ bāng nǐ.", indonesian: "Tolong biarkan saya membantu kamu." },
+                        { hanzi: "妈妈让我早点睡觉。", pinyin: "Māmā ràng wǒ zǎodiǎn shuìjiào.", indonesian: "Ibu menyuruh saya tidur lebih awal." }
+                    ]
+                },
+                "等": {
+                    indonesian: "menunggu",
+                    sentences: [
+                        { hanzi: "我在等公共汽车。", pinyin: "Wǒ zài děng gōnggòng qìchē.", indonesian: "Saya sedang menunggu bus." },
+                        { hanzi: "请等一下。", pinyin: "Qǐng děng yīxià.", indonesian: "Tolong tunggu sebentar." }
+                    ]
+                },
+                "白": {
+                    indonesian: "putih",
+                    sentences: [
+                        { hanzi: "雪是白色的。", pinyin: "Xuě shì báisè de.", indonesian: "Salju berwarna putih." },
+                        { hanzi: "我买了一件白衬衫。", pinyin: "Wǒ mǎi le yī jiàn bái chènshān.", indonesian: "Saya membeli sebuah kemeja putih." }
+                    ]
+                },
+                "服务员": {
+                    indonesian: "pelayan",
+                    sentences: [
+                        { hanzi: "服务员，请给我菜单。", pinyin: "Fúwùyuán, qǐng gěi wǒ càidān.", indonesian: "Pelayan, tolong berikan saya menu." },
+                        { hanzi: "这个餐厅的服务员很友好。", pinyin: "Zhège cāntīng de fúwùyuán hěn yǒuhǎo.", indonesian: "Pelayan restoran ini sangat ramah." }
+                    ]
+                },
+                "找": {
+                    indonesian: "mencari",
+                    sentences: [
+                        { hanzi: "我在找我的钥匙。", pinyin: "Wǒ zài zhǎo wǒ de yàoshi.", indonesian: "Saya sedang mencari kunci saya." },
+                        { hanzi: "你找谁？", pinyin: "Nǐ zhǎo shéi?", indonesian: "Kamu mencari siapa?" }
+                    ]
+                },
+                "告诉": {
+                    indonesian: "memberitahu",
+                    sentences: [
+                        { hanzi: "请告诉我你的电话号码。", pinyin: "Qǐng gàosù wǒ nǐ de diànhuà hàomǎ.", indonesian: "Tolong beritahu saya nomor telepon kamu." },
+                        { hanzi: "我告诉你一个秘密。", pinyin: "Wǒ gàosù nǐ yī gè mìmì.", indonesian: "Saya memberitahu kamu sebuah rahasia." }
+                    ]
+                },
+                "再": {
+                    indonesian: "lagi",
+                    sentences: [
+                        { hanzi: "请再说一遍。", pinyin: "Qǐng zài shuō yī biàn.", indonesian: "Tolong katakan sekali lagi." },
+                        { hanzi: "我们再见面吧。", pinyin: "Wǒmen zài jiànmiàn ba.", indonesian: "Mari kita bertemu lagi." }
+                    ]
+                },
+                "事情": {
+                    indonesian: "hal/urusan",
+                    sentences: [
+                        { hanzi: "这件事情很重要。", pinyin: "Zhè jiàn shìqíng hěn zhòngyào.", indonesian: "Hal ini sangat penting." },
+                        { hanzi: "我有很多事情要做。", pinyin: "Wǒ yǒu hěn duō shìqíng yào zuò.", indonesian: "Saya punya banyak hal yang harus dilakukan." }
+                    ]
+                }
+            },
+            "BAB 09": {
+                "上班": {
+                    indonesian: "bekerja",
+                    sentences: [
+                        { hanzi: "我八点上班。", pinyin: "Wǒ bā diǎn shàngbān.", indonesian: "Saya bekerja jam delapan." },
+                        { hanzi: "爸爸每天都上班。", pinyin: "Bàba měitiān dōu shàngbān.", indonesian: "Ayah bekerja setiap hari." }
+                    ]
+                },
+                "从": {
+                    indonesian: "dari",
+                    sentences: [
+                        { hanzi: "我从中国来。", pinyin: "Wǒ cóng Zhōngguó lái.", indonesian: "Saya datang dari China." },
+                        { hanzi: "从这里到那里要多长时间？", pinyin: "Cóng zhèlǐ dào nàlǐ yào duō cháng shíjiān?", indonesian: "Dari sini ke sana butuh berapa lama?" }
+                    ]
+                },
+                "完": {
+                    indonesian: "selesai",
+                    sentences: [
+                        { hanzi: "我做完作业了。", pinyin: "Wǒ zuòwán zuòyè le.", indonesian: "Saya sudah selesai mengerjakan PR." },
+                        { hanzi: "电影看完了。", pinyin: "Diànyǐng kànwán le.", indonesian: "Film sudah selesai ditonton." }
+                    ]
+                },
+                "希望": {
+                    indonesian: "berharap",
+                    sentences: [
+                        { hanzi: "我希望明天不下雨。", pinyin: "Wǒ xīwàng míngtiān bù xiàyǔ.", indonesian: "Saya berharap besok tidak hujan." },
+                        { hanzi: "希望你身体健康。", pinyin: "Xīwàng nǐ shēntǐ jiànkāng.", indonesian: "Semoga kamu sehat." }
+                    ]
+                },
+                "懂": {
+                    indonesian: "mengerti",
+                    sentences: [
+                        { hanzi: "我不懂这个意思。", pinyin: "Wǒ bù dǒng zhège yìsi.", indonesian: "Saya tidak mengerti arti ini." },
+                        { hanzi: "你懂中文吗？", pinyin: "Nǐ dǒng zhōngwén ma?", indonesian: "Apakah kamu mengerti bahasa Mandarin?" }
+                    ]
+                },
+                "欢迎": {
+                    indonesian: "selamat datang",
+                    sentences: [
+                        { hanzi: "欢迎来到中国！", pinyin: "Huānyíng lái dào Zhōngguó!", indonesian: "Selamat datang di China!" },
+                        { hanzi: "欢迎你们来我家。", pinyin: "Huānyíng nǐmen lái wǒ jiā.", indonesian: "Selamat datang kalian ke rumah saya." }
+                    ]
+                },
+                "第一": {
+                    indonesian: "pertama",
+                    sentences: [
+                        { hanzi: "这是我第一次来中国。", pinyin: "Zhè shì wǒ dì yī cì lái Zhōngguó.", indonesian: "Ini pertama kali saya datang ke China." },
+                        { hanzi: "他是第一名。", pinyin: "Tā shì dì yī míng.", indonesian: "Dia juara pertama." }
+                    ]
+                },
+                "跳舞": {
+                    indonesian: "menari",
+                    sentences: [
+                        { hanzi: "她很会跳舞。", pinyin: "Tā hěn huì tiàowǔ.", indonesian: "Dia sangat pandai menari." },
+                        { hanzi: "我们一起跳舞吧。", pinyin: "Wǒmen yīqǐ tiàowǔ ba.", indonesian: "Mari kita menari bersama." }
+                    ]
+                },
+                "错": {
+                    indonesian: "salah",
+                    sentences: [
+                        { hanzi: "对不起，我错了。", pinyin: "Duìbùqǐ, wǒ cuò le.", indonesian: "Maaf, saya salah." },
+                        { hanzi: "这个答案是错的。", pinyin: "Zhège dá'àn shì cuò de.", indonesian: "Jawaban ini salah." }
+                    ]
+                },
+                "问题": {
+                    indonesian: "pertanyaan/masalah",
+                    sentences: [
+                        { hanzi: "我有一个问题。", pinyin: "Wǒ yǒu yī gè wèntí.", indonesian: "Saya punya satu pertanyaan." },
+                        { hanzi: "这不是问题。", pinyin: "Zhè bù shì wèntí.", indonesian: "Ini bukan masalah." }
+                    ]
+                },
+                "题": {
+                    indonesian: "soal",
+                    sentences: [
+                        { hanzi: "这道题很难。", pinyin: "Zhè dào tí hěn nán.", indonesian: "Soal ini sangat sulit." },
+                        { hanzi: "考试有十道题。", pinyin: "Kǎoshì yǒu shí dào tí.", indonesian: "Ujian ada sepuluh soal." }
+                    ]
+                }
+            },
+            "BAB 10": {
+                "鸡蛋": {
+                    indonesian: "telur",
+                    sentences: [
+                        { hanzi: "我早上吃鸡蛋。", pinyin: "Wǒ zǎoshang chī jīdàn.", indonesian: "Saya makan telur di pagi hari." },
+                        { hanzi: "这个鸡蛋很新鲜。", pinyin: "Zhège jīdàn hěn xīnxiān.", indonesian: "Telur ini sangat segar." }
+                    ]
+                },
+                "课": {
+                    indonesian: "pelajaran",
+                    sentences: [
+                        { hanzi: "今天有中文课。", pinyin: "Jīntiān yǒu zhōngwén kè.", indonesian: "Hari ini ada pelajaran bahasa Mandarin." },
+                        { hanzi: "这节课很有趣。", pinyin: "Zhè jié kè hěn yǒuqù.", indonesian: "Pelajaran ini sangat menarik." }
+                    ]
+                },
+                "西瓜": {
+                    indonesian: "semangka",
+                    sentences: [
+                        { hanzi: "夏天我喜欢吃西瓜。", pinyin: "Xiàtiān wǒ xǐhuān chī xīguā.", indonesian: "Musim panas saya suka makan semangka." },
+                        { hanzi: "这个西瓜很甜。", pinyin: "Zhège xīguā hěn tián.", indonesian: "Semangka ini sangat manis." }
+                    ]
+                },
+                "洗": {
+                    indonesian: "mencuci",
+                    sentences: [
+                        { hanzi: "我要洗手。", pinyin: "Wǒ yào xǐshǒu.", indonesian: "Saya ingin cuci tangan." },
+                        { hanzi: "妈妈在洗衣服。", pinyin: "Māmā zài xǐ yīfú.", indonesian: "Ibu sedang mencuci pakaian." }
+                    ]
+                },
+                "正在": {
+                    indonesian: "sedang",
+                    sentences: [
+                        { hanzi: "我正在学习中文。", pinyin: "Wǒ zhèngzài xuéxí zhōngwén.", indonesian: "Saya sedang belajar bahasa Mandarin." },
+                        { hanzi: "他正在吃饭。", pinyin: "Tā zhèngzài chīfàn.", indonesian: "Dia sedang makan." }
+                    ]
+                },
+                "手机": {
+                    indonesian: "ponsel",
+                    sentences: [
+                        { hanzi: "我的手机在哪里？", pinyin: "Wǒ de shǒujī zài nǎlǐ?", indonesian: "Di mana ponsel saya?" },
+                        { hanzi: "这个手机很贵。", pinyin: "Zhège shǒujī hěn guì.", indonesian: "Ponsel ini sangat mahal." }
+                    ]
+                },
+                "帮助": {
+                    indonesian: "membantu",
+                    sentences: [
+                        { hanzi: "谢谢你的帮助。", pinyin: "Xièxiè nǐ de bāngzhù.", indonesian: "Terima kasih atas bantuanmu." },
+                        { hanzi: "我需要你的帮助。", pinyin: "Wǒ xūyào nǐ de bāngzhù.", indonesian: "Saya membutuhkan bantuanmu." }
+                    ]
+                },
+                "哥哥": {
+                    indonesian: "kakak laki-laki",
+                    sentences: [
+                        { hanzi: "我哥哥是老师。", pinyin: "Wǒ gēgē shì lǎoshī.", indonesian: "Kakak laki-laki saya adalah guru." },
+                        { hanzi: "哥哥比我高。", pinyin: "Gēgē bǐ wǒ gāo.", indonesian: "Kakak laki-laki lebih tinggi dari saya." }
+                    ]
+                },
+                "别": {
+                    indonesian: "jangan",
+                    sentences: [
+                        { hanzi: "别担心。", pinyin: "Bié dānxīn.", indonesian: "Jangan khawatir." },
+                        { hanzi: "别忘了带书。", pinyin: "Bié wàng le dài shū.", indonesian: "Jangan lupa bawa buku." }
+                    ]
+                }
+            },
+            "BAB 11": {
+                "便宜": {
+                    indonesian: "murah",
+                    sentences: [
+                        { hanzi: "这件衣服很便宜。", pinyin: "Zhè jiàn yīfú hěn piányí.", indonesian: "Pakaian ini sangat murah." },
+                        { hanzi: "便宜的东西不一定不好。", pinyin: "Piányí de dōngxī bù yīdìng bù hǎo.", indonesian: "Barang murah belum tentu tidak bagus." }
+                    ]
+                },
+                "去年": {
+                    indonesian: "tahun lalu",
+                    sentences: [
+                        { hanzi: "去年我去了中国。", pinyin: "Qùnián wǒ qù le Zhōngguó.", indonesian: "Tahun lalu saya pergi ke China." },
+                        { hanzi: "去年的冬天很冷。", pinyin: "Qùnián de dōngtiān hěn lěng.", indonesian: "Musim dingin tahun lalu sangat dingin." }
+                    ]
+                },
+                "可能": {
+                    indonesian: "mungkin",
+                    sentences: [
+                        { hanzi: "明天可能下雨。", pinyin: "Míngtiān kěnéng xiàyǔ.", indonesian: "Besok mungkin hujan." },
+                        { hanzi: "他可能不来了。", pinyin: "Tā kěnéng bù lái le.", indonesian: "Dia mungkin tidak datang." }
+                    ]
+                },
+                "右边": {
+                    indonesian: "sebelah kanan",
+                    sentences: [
+                        { hanzi: "银行在右边。", pinyin: "Yínháng zài yòubiān.", indonesian: "Bank ada di sebelah kanan." },
+                        { hanzi: "请往右边走。", pinyin: "Qǐng wǎng yòubiān zǒu.", indonesian: "Silakan jalan ke kanan." }
+                    ]
+                },
+                "唱歌": {
+                    indonesian: "bernyanyi",
+                    sentences: [
+                        { hanzi: "她很会唱歌。", pinyin: "Tā hěn huì chànggē.", indonesian: "Dia sangat pandai bernyanyi." },
+                        { hanzi: "我们一起唱歌吧。", pinyin: "Wǒmen yīqǐ chànggē ba.", indonesian: "Mari kita bernyanyi bersama." }
+                    ]
+                },
+                "女": {
+                    indonesian: "perempuan",
+                    sentences: [
+                        { hanzi: "她是一个女孩子。", pinyin: "Tā shì yī gè nǚháizi.", indonesian: "Dia adalah seorang anak perempuan." },
+                        { hanzi: "女老师很漂亮。", pinyin: "Nǚ lǎoshī hěn piàoliang.", indonesian: "Guru perempuan sangat cantik." }
+                    ]
+                },
+                "姓": {
+                    indonesian: "marga",
+                    sentences: [
+                        { hanzi: "你姓什么？", pinyin: "Nǐ xìng shénme?", indonesian: "Apa marga kamu?" },
+                        { hanzi: "我姓王。", pinyin: "Wǒ xìng Wáng.", indonesian: "Marga saya Wang." }
+                    ]
+                },
+                "孩子": {
+                    indonesian: "anak",
+                    sentences: [
+                        { hanzi: "这个孩子很聪明。", pinyin: "Zhège háizi hěn cōngmíng.", indonesian: "Anak ini sangat pintar." },
+                        { hanzi: "我有两个孩子。", pinyin: "Wǒ yǒu liǎng gè háizi.", indonesian: "Saya punya dua anak." }
+                    ]
+                },
+                "比": {
+                    indonesian: "dibandingkan",
+                    sentences: [
+                        { hanzi: "他比我高。", pinyin: "Tā bǐ wǒ gāo.", indonesian: "Dia lebih tinggi dibandingkan saya." },
+                        { hanzi: "苹果比香蕉贵。", pinyin: "Píngguǒ bǐ xiāngjiāo guì.", indonesian: "Apel lebih mahal dibandingkan pisang." }
+                    ]
+                },
+                "男": {
+                    indonesian: "laki-laki",
+                    sentences: [
+                        { hanzi: "他是一个男孩子。", pinyin: "Tā shì yī gè nánháizi.", indonesian: "Dia adalah seorang anak laki-laki." },
+                        { hanzi: "男老师很帅。", pinyin: "Nán lǎoshī hěn shuài.", indonesian: "Guru laki-laki sangat tampan." }
+                    ]
+                },
+                "说话": {
+                    indonesian: "berbicara",
+                    sentences: [
+                        { hanzi: "请不要说话。", pinyin: "Qǐng bùyào shuōhuà.", indonesian: "Tolong jangan berbicara." },
+                        { hanzi: "他在跟谁说话？", pinyin: "Tā zài gēn shéi shuōhuà?", indonesian: "Dia sedang berbicara dengan siapa?" }
+                    ]
+                }
+            },
+            "BAB 12": {
+                "零": {
+                    indonesian: "nol",
+                    sentences: [
+                        { hanzi: "我的电话号码是一三五零八。", pinyin: "Wǒ de diànhuà hàomǎ shì yī sān wǔ líng bā.", indonesian: "Nomor telepon saya adalah 13508." },
+                        { hanzi: "零下十度。", pinyin: "Língxià shí dù.", indonesian: "Sepuluh derajat di bawah nol." }
+                    ]
+                },
+                "雪": {
+                    indonesian: "salju",
+                    sentences: [
+                        { hanzi: "冬天下雪了。", pinyin: "Dōngtiān xiàxuě le.", indonesian: "Musim dingin turun salju." },
+                        { hanzi: "雪很白很美。", pinyin: "Xuě hěn bái hěn měi.", indonesian: "Salju sangat putih dan indah." }
+                    ]
+                },
+                "进": {
+                    indonesian: "masuk",
+                    sentences: [
+                        { hanzi: "请进来。", pinyin: "Qǐng jìnlái.", indonesian: "Silakan masuk." },
+                        { hanzi: "我进了房间。", pinyin: "Wǒ jìn le fángjiān.", indonesian: "Saya masuk ke kamar." }
+                    ]
+                },
+                "近": {
+                    indonesian: "dekat",
+                    sentences: [
+                        { hanzi: "学校离我家很近。", pinyin: "Xuéxiào lí wǒ jiā hěn jìn.", indonesian: "Sekolah sangat dekat dari rumah saya." },
+                        { hanzi: "最近怎么样？", pinyin: "Zuìjìn zěnmeyàng?", indonesian: "Bagaimana kabar akhir-akhir ini?" }
+                    ]
+                },
+                "穿": {
+                    indonesian: "memakai",
+                    sentences: [
+                        { hanzi: "今天我穿红色的衣服。", pinyin: "Jīntiān wǒ chuān hóngsè de yīfú.", indonesian: "Hari ini saya memakai pakaian berwarna merah." },
+                        { hanzi: "冬天要穿厚衣服。", pinyin: "Dōngtiān yào chuān hòu yīfú.", indonesian: "Musim dingin harus memakai pakaian tebal." }
+                    ]
+                },
+                "得": {
+                    indonesian: "harus/mendapat",
+                    sentences: [
+                        { hanzi: "我得回家了。", pinyin: "Wǒ děi huíjiā le.", indonesian: "Saya harus pulang ke rumah." },
+                        { hanzi: "他跑得很快。", pinyin: "Tā pǎo de hěn kuài.", indonesian: "Dia berlari sangat cepat." }
+                    ]
+                },
+                "弟弟": {
+                    indonesian: "adik laki-laki",
+                    sentences: [
+                        { hanzi: "我弟弟还在上学。", pinyin: "Wǒ dìdì hái zài shàngxué.", indonesian: "Adik laki-laki saya masih sekolah." },
+                        { hanzi: "弟弟比我小三岁。", pinyin: "Dìdì bǐ wǒ xiǎo sān suì.", indonesian: "Adik laki-laki tiga tahun lebih muda dari saya." }
+                    ]
+                },
+                "度": {
+                    indonesian: "derajat",
+                    sentences: [
+                        { hanzi: "今天三十度。", pinyin: "Jīntiān sānshí dù.", indonesian: "Hari ini tiga puluh derajat." },
+                        { hanzi: "水的温度是多少度？", pinyin: "Shuǐ de wēndù shì duōshǎo dù?", indonesian: "Berapa derajat suhu air?" }
+                    ]
+                },
+                "妻子": {
+                    indonesian: "istri",
+                    sentences: [
+                        { hanzi: "这是我的妻子。", pinyin: "Zhè shì wǒ de qīzi.", indonesian: "Ini adalah istri saya." },
+                        { hanzi: "他的妻子很漂亮。", pinyin: "Tā de qīzi hěn piàoliang.", indonesian: "Istrinya sangat cantik." }
+                    ]
+                }
+            },
+            "BAB 13": {
+                "一直": {
+                    indonesian: "terus-menerus",
+                    sentences: [
+                        { hanzi: "我一直在等你。", pinyin: "Wǒ yīzhí zài děng nǐ.", indonesian: "Saya terus-menerus menunggu kamu." },
+                        { hanzi: "一直往前走。", pinyin: "Yīzhí wǎng qián zǒu.", indonesian: "Terus berjalan ke depan." }
+                    ]
+                },
+                "宾馆": {
+                    indonesian: "hotel",
+                    sentences: [
+                        { hanzi: "我住在这个宾馆。", pinyin: "Wǒ zhù zài zhège bīnguǎn.", indonesian: "Saya tinggal di hotel ini." },
+                        { hanzi: "这个宾馆很干净。", pinyin: "Zhège bīnguǎn hěn gānjìng.", indonesian: "Hotel ini sangat bersih." }
+                    ]
+                },
+                "往": {
+                    indonesian: "menuju",
+                    sentences: [
+                        { hanzi: "往左边走。", pinyin: "Wǎng zuǒbiān zǒu.", indonesian: "Berjalan menuju ke kiri." },
+                        { hanzi: "我们往北走。", pinyin: "Wǒmen wǎng běi zǒu.", indonesian: "Kami berjalan menuju ke utara." }
+                    ]
+                },
+                "手": {
+                    indonesian: "tangan",
+                    sentences: [
+                        { hanzi: "请举手。", pinyin: "Qǐng jǔshǒu.", indonesian: "Tolong angkat tangan." },
+                        { hanzi: "我的手很冷。", pinyin: "Wǒ de shǒu hěn lěng.", indonesian: "Tangan saya sangat dingin." }
+                    ]
+                },
+                "拿": {
+                    indonesian: "mengambil",
+                    sentences: [
+                        { hanzi: "请拿一本书。", pinyin: "Qǐng ná yī běn shū.", indonesian: "Tolong ambil sebuah buku." },
+                        { hanzi: "我拿了我的包。", pinyin: "Wǒ ná le wǒ de bāo.", indonesian: "Saya mengambil tas saya." }
+                    ]
+                },
+                "班": {
+                    indonesian: "kelas",
+                    sentences: [
+                        { hanzi: "我们班有二十个学生。", pinyin: "Wǒmen bān yǒu èrshí gè xuéshēng.", indonesian: "Kelas kami ada dua puluh siswa." },
+                        { hanzi: "他是我们班的班长。", pinyin: "Tā shì wǒmen bān de bānzhǎng.", indonesian: "Dia adalah ketua kelas kami." }
+                    ]
+                },
+                "着": {
+                    indonesian: "partikel aspek",
+                    sentences: [
+                        { hanzi: "他穿着红色的衣服。", pinyin: "Tā chuān zhe hóngsè de yīfú.", indonesian: "Dia memakai pakaian berwarna merah." },
+                        { hanzi: "门开着。", pinyin: "Mén kāi zhe.", indonesian: "Pintu terbuka." }
+                    ]
+                },
+                "路口": {
+                    indonesian: "persimpangan",
+                    sentences: [
+                        { hanzi: "在路口右转。", pinyin: "Zài lùkǒu yòu zhuǎn.", indonesian: "Di persimpangan belok kanan." },
+                        { hanzi: "这个路口很危险。", pinyin: "Zhège lùkǒu hěn wēixiǎn.", indonesian: "Persimpangan ini sangat berbahaya." }
+                    ]
+                },
+                "铅笔": {
+                    indonesian: "pensil",
+                    sentences: [
+                        { hanzi: "我需要一支铅笔。", pinyin: "Wǒ xūyào yī zhī qiānbǐ.", indonesian: "Saya membutuhkan sebuah pensil." },
+                        { hanzi: "这支铅笔很好用。", pinyin: "Zhè zhī qiānbǐ hěn hǎoyòng.", indonesian: "Pensil ini sangat bagus digunakan." }
+                    ]
+                },
+                "长": {
+                    indonesian: "panjang",
+                    sentences: [
+                        { hanzi: "这条河很长。", pinyin: "Zhè tiáo hé hěn cháng.", indonesian: "Sungai ini sangat panjang." },
+                        { hanzi: "我的头发长了。", pinyin: "Wǒ de tóufǎ cháng le.", indonesian: "Rambut saya sudah panjang." }
+                    ]
+                }
+            },
+            "BAB 14": {
+                "虽然": {
+                    indonesian: "meskipun",
+                    sentences: [
+                        { hanzi: "虽然很累，但是我还要工作。", pinyin: "Suīrán hěn lèi, dànshì wǒ hái yào gōngzuò.", indonesian: "Meskipun sangat lelah, tapi saya masih harus bekerja." },
+                        { hanzi: "虽然下雨，我们还是去了。", pinyin: "Suīrán xiàyǔ, wǒmen háishì qù le.", indonesian: "Meskipun hujan, kami tetap pergi." }
+                    ]
+                },
+                "百": {
+                    indonesian: "ratus",
+                    sentences: [
+                        { hanzi: "一百块钱。", pinyin: "Yī bǎi kuài qián.", indonesian: "Seratus yuan." },
+                        { hanzi: "这本书有三百页。", pinyin: "Zhè běn shū yǒu sān bǎi yè.", indonesian: "Buku ini ada tiga ratus halaman." }
+                    ]
+                },
+                "玩儿": {
+                    indonesian: "bermain",
+                    sentences: [
+                        { hanzi: "孩子们在公园玩儿。", pinyin: "Háizimen zài gōngyuán wánr.", indonesian: "Anak-anak bermain di taman." },
+                        { hanzi: "我们去玩儿吧。", pinyin: "Wǒmen qù wánr ba.", indonesian: "Mari kita pergi bermain." }
+                    ]
+                },
+                "次": {
+                    indonesian: "kali",
+                    sentences: [
+                        { hanzi: "这是我第一次来中国。", pinyin: "Zhè shì wǒ dì yī cì lái Zhōngguó.", indonesian: "Ini pertama kali saya datang ke China." },
+                        { hanzi: "我去过三次北京。", pinyin: "Wǒ qù guò sān cì Běijīng.", indonesian: "Saya sudah pergi ke Beijing tiga kali." }
+                    ]
+                },
+                "有意思": {
+                    indonesian: "menarik",
+                    sentences: [
+                        { hanzi: "这本书很有意思。", pinyin: "Zhè běn shū hěn yǒuyìsi.", indonesian: "Buku ini sangat menarik." },
+                        { hanzi: "这个电影有意思吗？", pinyin: "Zhège diànyǐng yǒuyìsi ma?", indonesian: "Apakah film ini menarik?" }
+                    ]
+                },
+                "晴": {
+                    indonesian: "cerah",
+                    sentences: [
+                        { hanzi: "今天天气很晴。", pinyin: "Jīntiān tiānqì hěn qíng.", indonesian: "Hari ini cuaca sangat cerah." },
+                        { hanzi: "晴天我们去公园。", pinyin: "Qíngtiān wǒmen qù gōngyuán.", indonesian: "Hari cerah kami pergi ke taman." }
+                    ]
+                },
+                "但是": {
+                    indonesian: "tetapi",
+                    sentences: [
+                        { hanzi: "我很累，但是还要工作。", pinyin: "Wǒ hěn lèi, dànshì hái yào gōngzuò.", indonesian: "Saya sangat lelah, tetapi masih harus bekerja." },
+                        { hanzi: "这个很贵，但是很好。", pinyin: "Zhège hěn guì, dànshì hěn hǎo.", indonesian: "Ini sangat mahal, tetapi sangat bagus." }
+                    ]
+                }
+            },
+            "BAB 15": {
+                "大家": {
+                    indonesian: "semua orang",
+                    sentences: [
+                        { hanzi: "大家好！", pinyin: "Dàjiā hǎo!", indonesian: "Halo semua orang!" },
+                        { hanzi: "大家都很忙。", pinyin: "Dàjiā dōu hěn máng.", indonesian: "Semua orang sangat sibuk." }
+                    ]
+                },
+                "妹妹": {
+                    indonesian: "adik perempuan",
+                    sentences: [
+                        { hanzi: "我妹妹很可爱。", pinyin: "Wǒ mèimei hěn kě'ài.", indonesian: "Adik perempuan saya sangat lucu." },
+                        { hanzi: "妹妹比我小五岁。", pinyin: "Mèimei bǐ wǒ xiǎo wǔ suì.", indonesian: "Adik perempuan lima tahun lebih muda dari saya." }
+                    ]
+                },
+                "新年": {
+                    indonesian: "tahun baru",
+                    sentences: [
+                        { hanzi: "新年快乐！", pinyin: "Xīnnián kuàilè!", indonesian: "Selamat tahun baru!" },
+                        { hanzi: "新年我们回家过年。", pinyin: "Xīnnián wǒmen huíjiā guònián.", indonesian: "Tahun baru kami pulang ke rumah merayakan." }
+                    ]
+                },
+                "日": {
+                    indonesian: "hari",
+                    sentences: [
+                        { hanzi: "今天是星期日。", pinyin: "Jīntiān shì xīngqīrì.", indonesian: "Hari ini hari Minggu." },
+                        { hanzi: "生日快乐！", pinyin: "Shēngrì kuàilè!", indonesian: "Selamat ulang tahun!" }
+                    ]
+                },
+                "更": {
+                    indonesian: "lebih",
+                    sentences: [
+                        { hanzi: "这个更好。", pinyin: "Zhège gèng hǎo.", indonesian: "Ini lebih baik." },
+                        { hanzi: "我希望更努力学习。", pinyin: "Wǒ xīwàng gèng nǔlì xuéxí.", indonesian: "Saya berharap belajar lebih giat." }
+                    ]
+                },
+                "火车站": {
+                    indonesian: "stasiun kereta",
+                    sentences: [
+                        { hanzi: "我去火车站接朋友。", pinyin: "Wǒ qù huǒchēzhàn jiē péngyǒu.", indonesian: "Saya pergi ke stasiun kereta menjemput teman." },
+                        { hanzi: "火车站离这里很远。", pinyin: "Huǒchēzhàn lí zhèlǐ hěn yuǎn.", indonesian: "Stasiun kereta jauh dari sini." }
+                    ]
+                },
+                "票": {
+                    indonesian: "tiket",
+                    sentences: [
+                        { hanzi: "我买了电影票。", pinyin: "Wǒ mǎi le diànyǐng piào.", indonesian: "Saya membeli tiket film." },
+                        { hanzi: "火车票多少钱？", pinyin: "Huǒchē piào duōshǎo qián?", indonesian: "Berapa harga tiket kereta?" }
+                    ]
+                },
+                "阴": {
+                    indonesian: "mendung",
+                    sentences: [
+                        { hanzi: "今天天气阴。", pinyin: "Jīntiān tiānqì yīn.", indonesian: "Hari ini cuaca mendung." },
+                        { hanzi: "阴天可能要下雨。", pinyin: "Yīntiān kěnéng yào xiàyǔ.", indonesian: "Hari mendung mungkin akan hujan." }
+                    ]
+                }
+            }
+        };
 
-			win = win.parent;
-		}
-		return win.ispringPresentationConnector;
-	}
+        // Game state
+        let currentPlayer = '';
+        let currentChapter = '';
+        let currentMode = '';
+        let currentQuestions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let gameData = [];
+        let timerInterval = null;
+        let timeLeft = 10;
 
-	function getConnector()
-	{
-		var api = findConnector(window);
-		if (!api && window.opener && (typeof(window.opener) != "undefined"))
-		{
-			api = findConnector(window.opener);
-		}
-		return api;
-	}
+        // Audio context for sound effects
+        let audioContext;
+        let isAudioInitialized = false;
 
-	try
-	{
-		var connector = getConnector();
-		if (connector)
-		{
-			connector.register(player);
-		}
-	}
-	catch (e) {}
-})(player);
+        // Default config for editable features
+        const defaultConfig = {
+            game_title: "Latihan HSK 2 Kosakata",
+            designer_info: "Design by LCN Palembang (08994477998)"
+        };
 
-})(player);
+        // Initialize audio context
+        function initAudio() {
+            if (!isAudioInitialized) {
+                try {
+                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                    isAudioInitialized = true;
+                } catch (e) {
+                    console.log('Audio not supported');
+                }
+            }
+        }
 
-					var preloader = document.getElementById("preloader");
-					preloader.parentNode.removeChild(preloader);
-				}
-			}
+        // Play success sound
+        function playSuccessSound() {
+            if (!audioContext) return;
+            
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            oscillator.frequency.setValueAtTime(523.25, audioContext.currentTime); // C5
+            oscillator.frequency.setValueAtTime(659.25, audioContext.currentTime + 0.1); // E5
+            oscillator.frequency.setValueAtTime(783.99, audioContext.currentTime + 0.2); // G5
+            
+            gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+            
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 0.3);
+        }
 
-			if (startup)
-				startup(start);
-			else
-				start();
-		})());
+        // Play error sound
+        function playErrorSound() {
+            if (!audioContext) return;
+            
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            oscillator.frequency.setValueAtTime(220, audioContext.currentTime); // A3
+            oscillator.frequency.setValueAtTime(196, audioContext.currentTime + 0.15); // G3
+            
+            gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+            
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 0.3);
+        }
+
+        // Start timer
+        function startTimer() {
+            timeLeft = 10;
+            updateTimerDisplay();
+            
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerDisplay();
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    timeUp();
+                }
+            }, 1000);
+        }
+
+        // Update timer display
+        function updateTimerDisplay() {
+            const timerCircle = document.getElementById('timerCircle');
+            timerCircle.textContent = timeLeft;
+            
+            // Calculate progress (360 degrees = 10 seconds)
+            const progress = ((10 - timeLeft) / 10) * 360;
+            
+            // Update circle color and style based on time left
+            if (timeLeft > 5) {
+                timerCircle.className = 'timer-circle';
+                timerCircle.style.background = `conic-gradient(#28a745 ${progress}deg, #e9ecef ${progress}deg)`;
+            } else if (timeLeft > 2) {
+                timerCircle.className = 'timer-circle warning';
+                timerCircle.style.background = `conic-gradient(#ffc107 ${progress}deg, #e9ecef ${progress}deg)`;
+            } else {
+                timerCircle.className = 'timer-circle danger';
+                timerCircle.style.background = `conic-gradient(#dc3545 ${progress}deg, #e9ecef ${progress}deg)`;
+            }
+        }
+
+        // Stop timer
+        function stopTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+        }
+
+        // Time up
+        function timeUp() {
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                if (btn.textContent === currentQuestions[currentQuestionIndex].correct) {
+                    btn.classList.add('correct');
+                }
+            });
+            
+            playErrorSound();
+            showToast('Waktu Habis! ⏰', 'error');
+            
+            showExampleSentences();
+            
+            // Auto advance to next question after 3 seconds
+            setTimeout(() => {
+                currentQuestionIndex++;
+                showQuestion();
+            }, 3000);
+        }
+
+        // Data SDK handler
+        const dataHandler = {
+            onDataChanged(data) {
+                gameData = data;
+                // Update UI if needed
+            }
+        };
+
+        // Initialize the application
+        async function initApp() {
+            // Initialize Data SDK
+            if (window.dataSdk) {
+                const initResult = await window.dataSdk.init(dataHandler);
+                if (!initResult.isOk) {
+                    console.error("Failed to initialize data SDK");
+                }
+            }
+
+            // Initialize Element SDK
+            if (window.elementSdk) {
+                await window.elementSdk.init({
+                    defaultConfig,
+                    render: async (config) => {
+                        document.getElementById('gameTitle').textContent = config.game_title || defaultConfig.game_title;
+                        document.getElementById('designerInfo').textContent = config.designer_info || defaultConfig.designer_info;
+                    },
+                    mapToCapabilities: (config) => ({
+                        recolorables: [],
+                        borderables: [],
+                        fontEditable: undefined,
+                        fontSizeable: undefined
+                    }),
+                    mapToEditPanelValues: (config) => new Map([
+                        ["game_title", config.game_title || defaultConfig.game_title],
+                        ["designer_info", config.designer_info || defaultConfig.designer_info]
+                    ])
+                });
+            }
+
+            generateChapterButtons();
+        }
+
+        // Generate chapter buttons
+        function generateChapterButtons() {
+            const chapterGrid = document.getElementById('chapterGrid');
+            chapterGrid.innerHTML = '';
+            
+            for (let i = 1; i <= 15; i++) {
+                const button = document.createElement('button');
+                button.className = 'chapter-btn';
+                button.textContent = `BAB ${i.toString().padStart(2, '0')}`;
+                button.onclick = () => selectChapter(`BAB ${i.toString().padStart(2, '0')}`);
+                chapterGrid.appendChild(button);
+            }
+        }
+
+        // Start game
+        function startGame() {
+            const playerName = document.getElementById('playerName').value.trim();
+            if (!playerName) {
+                showToast('Silakan masukkan nama Anda!', 'error');
+                return;
+            }
+            
+            initAudio();
+            currentPlayer = playerName;
+            
+            document.getElementById('playerForm').classList.add('hidden');
+            document.getElementById('chapterSelection').classList.remove('hidden');
+        }
+
+        // Select chapter
+        function selectChapter(chapter) {
+            currentChapter = chapter;
+            document.getElementById('chapterSelection').classList.add('hidden');
+            document.getElementById('modeSelection').classList.remove('hidden');
+        }
+
+        // Select mode
+        function selectMode(mode) {
+            currentMode = mode;
+            generateQuestions();
+            startQuiz();
+        }
+
+        // Generate questions based on mode
+        function generateQuestions() {
+            const chapterData = vocabularyData[currentChapter];
+            const words = Object.keys(chapterData);
+            currentQuestions = [];
+            
+            words.forEach(word => {
+                const wordData = chapterData[word];
+                
+                if (currentMode === 'indonesia-hanzi') {
+                    currentQuestions.push({
+                        question: wordData.indonesian,
+                        correct: word,
+                        type: 'indonesia-hanzi',
+                        wordData: wordData
+                    });
+                } else if (currentMode === 'hanzi-indonesia') {
+                    currentQuestions.push({
+                        question: word,
+                        correct: wordData.indonesian,
+                        type: 'hanzi-indonesia',
+                        wordData: wordData
+                    });
+                } else if (currentMode === 'melengkapi') {
+                    // Create fill-in-the-blank questions
+                    const sentence = wordData.sentences[0];
+                    const questionText = sentence.hanzi.replace(word, '___');
+                    currentQuestions.push({
+                        question: `${questionText}\n${sentence.indonesian}`,
+                        correct: word,
+                        type: 'melengkapi',
+                        wordData: wordData
+                    });
+                }
+            });
+            
+            // Shuffle questions
+            currentQuestions = shuffleArray(currentQuestions);
+            currentQuestionIndex = 0;
+            score = 0;
+        }
+
+        // Shuffle array
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        // Start quiz
+        function startQuiz() {
+            document.getElementById('modeSelection').classList.add('hidden');
+            document.getElementById('gameArea').classList.remove('hidden');
+            
+            updateGameDisplay();
+            showQuestion();
+        }
+
+        // Update game display
+        function updateGameDisplay() {
+            document.getElementById('playerDisplay').textContent = currentPlayer;
+            document.getElementById('chapterDisplay').textContent = currentChapter;
+            document.getElementById('modeDisplay').textContent = getModeDisplayName(currentMode);
+            document.getElementById('scoreDisplay').textContent = score;
+            document.getElementById('totalDisplay').textContent = currentQuestions.length;
+        }
+
+        // Get mode display name
+        function getModeDisplayName(mode) {
+            switch(mode) {
+                case 'indonesia-hanzi': return 'Indonesia → Hanzi';
+                case 'hanzi-indonesia': return 'Hanzi → Indonesia';
+                case 'melengkapi': return 'Melengkapi Kosakata';
+                default: return mode;
+            }
+        }
+
+        // Show question
+        function showQuestion() {
+            if (currentQuestionIndex >= currentQuestions.length) {
+                showResults();
+                return;
+            }
+            
+            const question = currentQuestions[currentQuestionIndex];
+            document.getElementById('questionText').textContent = question.question;
+            
+            // Generate options
+            const options = generateOptions(question);
+            const optionsGrid = document.getElementById('optionsGrid');
+            optionsGrid.innerHTML = '';
+            
+            options.forEach(option => {
+                const button = document.createElement('button');
+                button.className = 'option-btn';
+                button.textContent = option;
+                button.onclick = () => selectAnswer(option, question.correct);
+                optionsGrid.appendChild(button);
+            });
+            
+            document.getElementById('exampleSentences').classList.add('hidden');
+            
+            // Start timer for this question
+            startTimer();
+        }
+
+        // Generate options for question
+        function generateOptions(question) {
+            const allWords = [];
+            
+            // Collect all possible answers from all chapters
+            Object.keys(vocabularyData).forEach(chapter => {
+                Object.keys(vocabularyData[chapter]).forEach(word => {
+                    const wordData = vocabularyData[chapter][word];
+                    if (question.type === 'indonesia-hanzi' || question.type === 'melengkapi') {
+                        allWords.push(word);
+                    } else if (question.type === 'hanzi-indonesia') {
+                        allWords.push(wordData.indonesian);
+                    }
+                });
+            });
+            
+            // Remove duplicates and correct answer
+            const uniqueWords = [...new Set(allWords)].filter(word => word !== question.correct);
+            
+            // Shuffle and take 5 wrong answers
+            const shuffledWrong = shuffleArray(uniqueWords).slice(0, 5);
+            
+            // Add correct answer and shuffle
+            const options = [...shuffledWrong, question.correct];
+            return shuffleArray(options);
+        }
+
+        // Select answer
+        function selectAnswer(selected, correct) {
+            // Stop timer when answer is selected
+            stopTimer();
+            
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                if (btn.textContent === correct) {
+                    btn.classList.add('correct');
+                } else if (btn.textContent === selected && selected !== correct) {
+                    btn.classList.add('incorrect');
+                }
+            });
+            
+            if (selected === correct) {
+                score++;
+                playSuccessSound();
+                showToast('Benar! 🎉', 'success');
+            } else {
+                playErrorSound();
+                showToast('Salah! 😞', 'error');
+            }
+            
+            updateGameDisplay();
+            showExampleSentences();
+            
+            // Auto advance to next question after 3 seconds
+            setTimeout(() => {
+                currentQuestionIndex++;
+                showQuestion();
+            }, 3000);
+        }
+
+        // Show example sentences
+        function showExampleSentences() {
+            const question = currentQuestions[currentQuestionIndex];
+            const sentences = question.wordData.sentences;
+            
+            let sentenceHTML = '';
+            sentences.forEach(sentence => {
+                sentenceHTML += `
+                    <div class="sentence">
+                        <div class="hanzi">${sentence.hanzi}</div>
+                        <div class="pinyin">${sentence.pinyin}</div>
+                        <div class="indonesian">${sentence.indonesian}</div>
+                    </div>
+                `;
+            });
+            
+            document.getElementById('sentenceContent').innerHTML = sentenceHTML;
+            document.getElementById('exampleSentences').classList.remove('hidden');
+        }
+
+        // Show results
+        async function showResults() {
+            document.getElementById('gameArea').classList.add('hidden');
+            document.getElementById('results').classList.remove('hidden');
+            
+            const percentage = Math.round((score / currentQuestions.length) * 100);
+            document.getElementById('finalScore').innerHTML = `
+                <h3>${currentPlayer}</h3>
+                <p>Skor: ${score}/${currentQuestions.length} (${percentage}%)</p>
+                <p>Bab: ${currentChapter}</p>
+                <p>Mode: ${getModeDisplayName(currentMode)}</p>
+            `;
+            
+            // Save result to Data SDK
+            if (window.dataSdk && gameData.length < 999) {
+                const result = await window.dataSdk.create({
+                    player_name: currentPlayer,
+                    chapter: currentChapter,
+                    mode: currentMode,
+                    score: score,
+                    total_questions: currentQuestions.length,
+                    timestamp: new Date().toISOString()
+                });
+                
+                if (!result.isOk) {
+                    console.error("Failed to save result");
+                }
+            }
+        }
+
+        // Back to player form
+        function backToPlayerForm() {
+            document.getElementById('chapterSelection').classList.add('hidden');
+            document.getElementById('playerForm').classList.remove('hidden');
+        }
+
+        // Back to chapter selection
+        function backToChapterSelection() {
+            document.getElementById('results').classList.add('hidden');
+            document.getElementById('modeSelection').classList.add('hidden');
+            document.getElementById('chapterSelection').classList.remove('hidden');
+        }
+
+        // Back to mode selection
+        function backToModeSelection() {
+            // Stop timer if running
+            stopTimer();
+            
+            document.getElementById('gameArea').classList.add('hidden');
+            document.getElementById('modeSelection').classList.remove('hidden');
+            
+            // Reset current game state but keep player and chapter
+            currentQuestions = [];
+            currentQuestionIndex = 0;
+            score = 0;
+            timeLeft = 10;
+        }
+
+        // Back to menu
+        function backToMenu() {
+            // Stop timer if running
+            stopTimer();
+            
+            document.getElementById('gameArea').classList.add('hidden');
+            document.getElementById('results').classList.add('hidden');
+            document.getElementById('modeSelection').classList.add('hidden');
+            document.getElementById('chapterSelection').classList.add('hidden');
+            document.getElementById('playerForm').classList.remove('hidden');
+            
+            // Reset game state
+            currentPlayer = '';
+            currentChapter = '';
+            currentMode = '';
+            currentQuestions = [];
+            currentQuestionIndex = 0;
+            score = 0;
+            timeLeft = 10;
+            
+            document.getElementById('playerName').value = '';
+        }
+
+        // Show toast message
+        function showToast(message, type) {
+            const toast = document.createElement('div');
+            toast.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 15px 25px;
+                border-radius: 10px;
+                color: white;
+                font-size: 18px;
+                font-family: SimSun, serif;
+                z-index: 1000;
+                animation: slideIn 0.3s ease;
+                ${type === 'success' ? 'background: #28a745;' : 'background: #dc3545;'}
+            `;
+            toast.textContent = message;
+            
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.remove();
+            }, 2000);
+        }
+
+        // Initialize app when DOM is loaded
+        document.addEventListener('DOMContentLoaded', initApp);
     </script>
-</body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99b32608b64371ba',t:'MTc2MjU4NDc1Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
